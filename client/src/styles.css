@@ -1,0 +1,62 @@
+:root {
+  color-scheme: light;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(242, 109, 74, 0.16), transparent 28%),
+    linear-gradient(180deg, #fffaf4 0%, #f6f4ef 46%, #f2efe8 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.hero-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-shell::before,
+.hero-shell::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(12px);
+  opacity: 0.45;
+}
+
+.hero-shell::before {
+  width: 280px;
+  height: 280px;
+  top: -80px;
+  right: 10%;
+  background: rgba(212, 139, 66, 0.24);
+}
+
+.hero-shell::after {
+  width: 360px;
+  height: 360px;
+  bottom: -160px;
+  left: -80px;
+  background: rgba(24, 115, 84, 0.12);
+}
+
+.eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 10px 16px;
+  border: 1px solid rgba(46, 49, 36, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  color: #3d3f31;
+  font-size: 0.92rem;
+  font-weight: 700;
+  backdrop-filter: blur(10px);
+}
+
