@@ -82,6 +82,136 @@ const products = [
     rating: 4.4,
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
     featured: false
+  },
+  {
+    name: "Summit Duffel",
+    slug: "summit-duffel",
+    brand: "Wayfare",
+    category: "Travel",
+    description: "A rugged weekender duffel with water-resistant shell, shoe compartment, and reinforced straps.",
+    price: 89.99,
+    originalPrice: 119.99,
+    inventory: 20,
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&w=900&q=80",
+    featured: true
+  },
+  {
+    name: "Aero Wireless Charger",
+    slug: "aero-wireless-charger",
+    brand: "Voltic",
+    category: "Tech",
+    description: "Slim fast wireless charger with soft-touch finish and bedside-friendly charging indicator.",
+    price: 34.99,
+    originalPrice: 44.99,
+    inventory: 35,
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?auto=format&fit=crop&w=900&q=80",
+    featured: false
+  },
+  {
+    name: "Breeze Hoodie",
+    slug: "breeze-hoodie",
+    brand: "Northline",
+    category: "Fashion",
+    description: "Midweight hoodie with brushed interior, clean tailoring, and all-day comfort for daily wear.",
+    price: 54.99,
+    originalPrice: 74.99,
+    inventory: 28,
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+    featured: false
+  },
+  {
+    name: "Drift Mechanical Keyboard",
+    slug: "drift-mechanical-keyboard",
+    brand: "Keystack",
+    category: "Workspace",
+    description: "Compact mechanical keyboard with tactile switches, hot-swap sockets, and warm white backlight.",
+    price: 129.99,
+    originalPrice: 159.99,
+    inventory: 14,
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=900&q=80",
+    featured: true
+  },
+  {
+    name: "Trail Performance Cap",
+    slug: "trail-performance-cap",
+    brand: "Wildcarry",
+    category: "Lifestyle",
+    description: "Lightweight cap with moisture-wicking fabric, curved brim, and adjustable back closure.",
+    price: 24.99,
+    originalPrice: 32.99,
+    inventory: 50,
+    rating: 4.2,
+    image: "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=80",
+    featured: false
+  },
+  {
+    name: "Lumen Table Speaker",
+    slug: "lumen-table-speaker",
+    brand: "Auralab",
+    category: "Audio",
+    description: "Compact Bluetooth speaker with room-filling sound, walnut trim, and 18-hour battery life.",
+    price: 94.99,
+    originalPrice: 124.99,
+    inventory: 19,
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1512446816042-444d64126727?auto=format&fit=crop&w=900&q=80",
+    featured: true
+  },
+  {
+    name: "Harbor Ceramic Mug",
+    slug: "harbor-ceramic-mug",
+    brand: "Luma",
+    category: "Home",
+    description: "Matte ceramic mug with a comfortable handle, thick walls, and a clean studio-fired finish.",
+    price: 18.99,
+    originalPrice: 24.99,
+    inventory: 60,
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?auto=format&fit=crop&w=900&q=80",
+    featured: false
+  },
+  {
+    name: "Atlas Carry-On",
+    slug: "atlas-carry-on",
+    brand: "Wayfare",
+    category: "Travel",
+    description: "Hard-shell carry-on with silent spinner wheels, compression straps, and TSA-friendly lock.",
+    price: 179.99,
+    originalPrice: 219.99,
+    inventory: 10,
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=900&q=80",
+    featured: true
+  },
+  {
+    name: "Core Training Mat",
+    slug: "core-training-mat",
+    brand: "Motion",
+    category: "Fitness",
+    description: "High-density training mat with anti-slip texture and easy-roll design for home workouts.",
+    price: 44.99,
+    originalPrice: 59.99,
+    inventory: 27,
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80",
+    featured: false
+  },
+  {
+    name: "Focus Desk Organizer",
+    slug: "focus-desk-organizer",
+    brand: "Luma",
+    category: "Workspace",
+    description: "Minimal desk organizer with compartments for cables, pens, cards, and everyday essentials.",
+    price: 39.99,
+    originalPrice: 49.99,
+    inventory: 31,
+    rating: 4.3,
+    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
+    featured: false
   }
 ];
 
@@ -99,4 +229,3 @@ const seedProducts = async () => {
 };
 
 seedProducts();
-
