@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import { connectDatabase } from "./config/db.js";
+import { ensureProductsSeeded } from "./lib/ensureProductsSeeded.js";
 import productRoutes from "./routes/productRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
 import { errorHandler, notFound } from "./middleware/errorHandler.js";
@@ -32,7 +33,13 @@ app.use(notFound);
 app.use(errorHandler);
 
 connectDatabase()
-  .then(() => {
+  .then(async () => {
+    const seeded = await ensureProductsSeeded();
+
+    if (seeded) {
+      console.log("Default products inserted");
+    }
+
     app.listen(port, () => {
       console.log(`Server listening on port ${port}`);
     });
